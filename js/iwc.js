@@ -3,9 +3,9 @@ $(document).ready(function()
 {
     podcast_resize();
     $("#headers").empty();
-    $("#headers").load("/headers.html");
+    $("#headers").load("./headers.html");
     $("#footers").empty();
-    $("#footers").load("/footers.html");
+    $("#footers").load("./footers.html");
     $("#fancybox_options").load("/fancybox_options.html");
     $(".closeBtn").click(header_search_close_event);
     justToggle(".watch_detail > div:first-of-type > div:first-of-type ul li");
