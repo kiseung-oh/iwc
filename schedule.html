@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWC</title>
+    <link rel="shortcut icon" href="images/shortcut.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="headers"></div>
+    <section class="account_create">
+        <h2>Boutique Appointment</h2>
+        <span>Please complete the details of the appointment you request below.</span>
+        <div>
+            <form id="account_info" action="account_main.html">
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="FirstName">First Name</label>
+                            <input type="text" id="FirstName" required>
+                        </li>
+                        <li>
+                            <label for="LastName">Last Name</label>
+                            <input type="text" id="LastName" required>
+                        </li>
+                        <li>
+                            <label for="TelNum">Telephone Number</label>
+                            <input type="tel" id="TelNum" required>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </li>
+                        <li>
+                            <label for="Country">Country</label>
+                            <select id="Country">
+                                <option value="0">Switzerland</option>
+                                <option value="1">Germany</option>
+                                <option value="2">USA</option>
+                                <option value="3" selected>korea,Republic of</option>
+                                <option value="4">Japan</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="Boutique">Boutique</label>
+                            <select id="Boutique">
+                                <option value="0">GWANJU</option>
+                                <option value="1">GOYANG</option>
+                                <option value="2">HANAM</option>
+                                <option value="3">SEONGNAM</option>
+                                <option value="4">HWASEONG</option>
+                                <option value="5">SUWON</option>
+                                <option value="6">YONGIN</option>
+                                <option value="7">CHANGWON</option>
+                                <option value="8">DAEGU</option>
+                                <option value="9">DAEJEON</option>
+                                <option value="10">BUSAN</option>
+                                <option value="11">SEOUL</option>
+                                <option value="12">INCHEON</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="dateNum">APPOINTMENT DATE</label>
+                            <input type="date" id="dateNum" required>
+                        </li>
+                        <li>
+                            <label for="timeNum">TIME</label>
+                            <input type="time" id="timeNum" required>
+                        </li>
+                        <li>
+                            <label for="reason">REASON FOR YOUR VISIT</label>
+                            <select id="reason">
+                                <option value="0">Customer Service</option>
+                                <option value="1">Discover Watches</option>
+                                <option value="2">Others</option>
+                                <option value="3">Lounge</option>
+                                <option value="4">Limitation Editions</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div>
+                        <input type="submit" value="Submit" class="Confirm_check">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <div id="footers"></div>
+</body>
+</html>
