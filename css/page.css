@@ -669,29 +669,26 @@
 
     .watch_detail > div:first-of-type
     {
-        position: relative;
+        
         margin-bottom: 100px;
     }
 
-
-
-
-
     .watch_detail > div:first-of-type > div:first-of-type
     {
-        width: 80%;
-        margin: 0 auto 27px;
-    }
-    .watch_detail > div:first-of-type > div:first-of-type ul
-    {
-        text-align: center;
         position: relative;
+        width: 100%;
+        margin: 0 auto 27px;
+        overflow-y: hidden;
+        height: 400px;
+    }
+    .watch_detail > div:first-of-type > div:first-of-type *
+    {
+        margin: 0 auto;
     }
 
     .watch_detail > div:first-of-type > div:first-of-type ul.detail_main li
     {
         height: 400px;
-        width: 400px;
     }
 
     .watch_detail > div:first-of-type > div:first-of-type ul.detail_main li *
@@ -706,11 +703,39 @@
 
     #detail_main_custom_pager
     {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        transition-duration: 0.5s;
     }
 
+    #detail_main_custom_pager a
+    {
+        display: block;
+        height: 70px;
+        width: 70px;
+        border: 2px solid var(--gs2);
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        transition-duration: 0.5s;
+    }
 
+    #detail_main_custom_pager a img
+    {
+        height: 100%;
+    }
 
+    #detail_main_custom_pager a.active
+    {
+        border-color: var(--gs7);
+        padding: 5px;
+    }
+
+    #detail_main_custom_pager a:not(:first-of-type)
+    {
+        margin-top: 40px;
+    }
 
     .watch_detail > div:first-of-type button,
     .watch_detail > div:first-of-type button.active
@@ -778,18 +803,10 @@
         margin: 0 auto;
     }
 
-
-
-
-
     .detail_others
     {
         display:  none;
     }
-
-
-
-
 
     .watch_detail > div:last-of-type
     {
@@ -4362,25 +4379,25 @@
 
     .watch_detail > div:first-of-type
     {
-        position: relative;
         margin-bottom: 100px;
     }
 
     .watch_detail > div:first-of-type > div:first-of-type
     {
-        width: 80%;
-        margin: 0 auto 27px;
-    }
-    .watch_detail > div:first-of-type > div:first-of-type ul
-    {
-        text-align: center;
         position: relative;
+        width: 100%;
+        margin: 0 auto 27px;
+        overflow-y: hidden;
+        height: 550px;
+    }
+    .watch_detail > div:first-of-type > div:first-of-type *
+    {
+        margin: 0 auto;
     }
 
     .watch_detail > div:first-of-type > div:first-of-type ul.detail_main li
     {
         height: 510px;
-        width: 510px;
     }
 
     .watch_detail > div:first-of-type > div:first-of-type ul.detail_main li *
@@ -4395,7 +4412,38 @@
 
     #detail_main_custom_pager
     {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        transition-duration: 0.5s;
+    }
+
+    #detail_main_custom_pager a
+    {
+        display: block;
+        height: 70px;
+        width: 70px;
+        border: 2px solid var(--gs2);
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        transition-duration: 0.5s;
+    }
+
+    #detail_main_custom_pager a img
+    {
+        height: 100%;
+    }
+
+    #detail_main_custom_pager a.active
+    {
+        border-color: var(--gs7);
+        padding: 5px;
+    }
+
+    #detail_main_custom_pager a:not(:first-of-type)
+    {
+        margin-top: 40px;
     }
 
     .watch_detail > div:first-of-type button,
