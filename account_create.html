@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWC</title>
+    <link rel="shortcut icon" href="images/shortcut.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="headers"></div>
+
+    <section class="account_create">
+        <h2>CREATE NEW ACCOUNT </h2>
+        <span>Register online now to personalize your account, receive updates or catalogues, manage your orders and wish lists.</span>
+        <div>
+            <form id="account_info" action="account_main.html" method="get">
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="FirstName">First Name</label>
+                            <input type="text" id="FirstName" name="FirstName" required>
+                        </li>
+                        <li>
+                            <label for="LastName">Last Name</label>
+                            <input type="text" id="LastName" name="LastName" required>
+                        </li>
+                        <li>
+                            <label for="TelNum">Telephone Number</label>
+                            <input type="tel" id="TelNum" name="TelNum" required>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </li>
+                        <li>
+                            <label for="Pw">Password</label>
+                            <input type="password" id="Pw" maxlength="20" name="Pw" required>
+                        </li>
+                        <li>
+                            <label for="ConfirmPw">Confirm Password</label>
+                            <input type="password" id="ConfirmPw" required>
+                            <span class="Confirm_alert" id="Confirm-success">비밀번호가 일치합니다.</span>
+                            <span class="Confirm_alert" id="Confirm-wrong">비밀번호가 일치하지 않습니다.</span>
+                        </li>
+                        <li>
+                            <label for="Country">Country</label>
+                            <select id="Country" name="Country">
+                                <option value="0">Switzerland</option>
+                                <option value="1">Germany</option>
+                                <option value="2">USA</option>
+                                <option value="3" selected>korea,Republic of</option>
+                                <option value="4">Japan</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="Address_l1">Address line 1</label>
+                            <input type="text" id="Address_l1">
+                        </li>
+                        <li>
+                            <label for="Address_l2">Address line 2</label>
+                            <input type="text" id="Address_l2">
+                        </li>
+                        <li>
+                            <label for="City">Town / city</label>
+                            <input type="text" id="City" name="City" required>
+                        </li>
+                        <li>
+                            <label for="ZipCode">Post / zip code</label>
+                            <input type="text" id="ZipCode">
+                        </li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <span>I would also like to receive marketing information about IWC Schaffhausen's products or services  We may sendyou this information using e-mail, text, telephone, post, social media or through online advertising. You can ask usto stop marketing at any time. </span>
+                        <div>
+                            <label for="receive_marketing_agree">agree</label>
+                            <input type="radio" name="receive_marketing_check" id="receive_marketing_agree">
+                            <label for="receive_marketing_disagree">disagree</label>
+                            <input type="radio" name="receive_marketing_check" id="receive_marketing_disagree">
+                        </div>
+                        <input type="submit" value="Register" class="Confirm_check">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <div id="footers"></div>
+</body>
+</html>

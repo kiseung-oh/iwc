@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWC</title>
+    <link rel="shortcut icon" href="images/shortcut.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/iwc.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="headers"></div>
+
+    <section class="account_sign_in">
+        <div>
+            <form action="account_main.html">
+                <fieldset>
+                    <h2>MY IWC SIGN IN</h2>
+                    <div>
+                        <span>Welcome to the world of Breguet. Please login or <a href="account_create.html">create a My Breguet personal account</a></span>
+                        <div>
+                            <label for="EMAIL_ADDRESS">* EMAIL ADDRESS</label>
+                            <input type="email" id="EMAIL_ADDRESS" required>
+                        </div>
+                        <div>
+                            <label for="userPw">* PASSWORD</label>
+                            <input type="password" id="userPw" minlength="6" maxlength="16" required>
+                        </div>
+                        <input type="submit" value="connect">
+                        <a href="account_find.html">Forgot your password</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <div id="footers"></div>
+</body>
+</html>
