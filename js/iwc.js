@@ -2,7 +2,9 @@
 $(document).ready(function()
 {
     podcast_resize();
+    $("#headers").empty();
     $("#headers").load("/headers.html");
+    $("#footers").empty();
     $("#footers").load("/footers.html");
     $("#fancybox_options").load("/fancybox_options.html");
     $(".closeBtn").click(header_search_close_event);
@@ -183,8 +185,6 @@ function checkScreenSize()
             bx_destroy_and_reload.reloadSlider();            
         }    
     });
-    
-    
 }
 
 function justToggle(target)
