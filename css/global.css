@@ -1,0 +1,1285 @@
+:root
+{
+    /* GrayScale */
+    --gs1: #ffffff;
+    --gs2: #e0e0e0;
+    --gs3: #969696;
+    --gs4: #4a4a4a;
+    --gs5: #3c3c3c;
+    --gs6: #141414;
+    --gs7: #000000;
+
+    /* FontWeight */
+	--Thin: 100;
+	--ExtraLight: 200;
+	--Light: 300;
+	--Regular: 400;
+	--Medium: 500;
+	--SemiBold: 600;
+	--Bold: 700;
+	--ExtraBold: 800;
+	--Black: 900;
+}
+
+
+/* font */
+.hn,
+.watch_detail,
+.watch_list,
+.watch_detail,
+.account_main,
+.account_create,
+.account_findPw,
+.account_sign_in,
+.introduction_to_our_history,
+.introduction_to_our_collection,
+.discover_our_service,
+.collection_history,
+.service_type,
+.service_price_calculator,
+.service_price_calculator_select,
+.service_price_calculator_receipt,
+.faq,
+.services_warranty,
+.sales_warranty,
+.extension_warranty,
+.warranty_guarantee,
+.warranty_flow,
+.our_manufacture,
+.watchmaking_history,
+.innovative_materials,
+.compilation,
+.compilation,
+.museum,
+.luxury_watches,
+.journal_content,
+.podcast,
+.find_store,
+.appointment,
+.subscribe,
+.subscribe_registered,
+.screensaver
+{font-family: 'HelveticaNeue';}
+
+header,
+.indexContainer *,
+footer
+{font-family: 'Gotham Pro';}
+
+
+/* keyframes */
+@keyframes xrotate1
+{
+    from
+    {
+        transform: rotate(45deg);
+        border-color: var(--gs7);
+    }
+    to
+    {
+        transform: rotate(1800deg);
+        border-color: var(--gs2);
+    }
+}
+
+@keyframes xrotate2
+{
+    from
+    {
+        transform: rotate(-45deg);
+        border-color: var(--gs7);
+    }
+    to
+    {
+        transform: rotate(1800deg);
+        border-color: var(--gs2);
+    }
+}
+
+.bx-wrapper
+{
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    margin-bottom: 0;
+}
+
+
+/* panel */
+[id$='Panel']
+{
+    display: none;
+}
+[id$='Panel'].active
+{
+    display: block;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width:767px)
+{   
+    header div nav > ul,
+    .indexContainer > div:first-of-type ul.p1 li h2,
+    .indexContainer > div:first-of-type ul.p1 li a,
+    .indexContainer > div:nth-of-type(2) div.news_content *,
+    .indexContainer > div:nth-of-type(3) *,
+    .indexContainer > div:nth-of-type(4) div *,
+    .indexContainer > div:nth-of-type(5) div *,
+    .indexContainer > div:nth-of-type(6) div *,
+    .indexContainer > div:nth-of-type(7) div *,
+    footer > *
+    {
+        padding: 0 3.5%;
+    }
+
+    body
+    {
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    body::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+
+    header
+    {
+        z-index: 10000;
+        background-color: var(--gs1);
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+header > .openBtn
+    {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        display: block;
+        top: 30px;
+        left: 20px;
+        padding: 2px;
+        height: 16px;
+        width: 20px;
+    }
+
+    header > .openBtn span
+    {
+        display: block;
+        border: 1px solid var(--gs7);
+        border-radius: 2px;
+        line-height: 0px;
+        text-indent: -9999px;
+        margin-bottom: 5px;
+    }
+
+    header > div:first-of-type
+    {
+        background-color: var(--gs1);
+        margin-bottom: 19px;
+    }
+
+    header > div:first-of-type h1 a
+    {
+        margin: 0 auto;
+        display: block;
+        width: 225px;
+        height: 95px;
+        text-indent: -9999px;
+        background: url('../images/logo.jpeg') left top / cover no-repeat;
+    }
+
+    header > div:nth-of-type(2)
+    {
+        position: fixed;
+        background-color: var(--gs2);
+        top: 0;
+        width: 100%;
+        height: 90%;
+        z-index: 1;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
+    }
+
+    header > div:nth-of-type(2)::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+
+    header > div:nth-of-type(2) > button.closeBtn
+    {
+        z-index: 1000;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    header > div:nth-of-type(2) > button.closeBtn span
+    {
+        line-height: 0;
+        border: 1px solid var(--gs7);
+        border-radius: 2px;
+        line-height: 0;
+        width: 20px; 
+        text-indent: -9999px;
+    }
+
+    header > div nav
+    { 
+        position: relative;
+    }
+
+    header div nav > ul
+    {
+        padding:5% 7%;
+        text-align: left; 
+    }
+
+    header div nav > ul li *
+    {
+        display: block;
+        width: 100%;
+    }
+
+    header div nav ul li > span
+    {
+        color: var(--gs7);
+        font-weight: var(--Medium);
+        line-height: 45px;
+        font-size: 18px;
+    }
+
+    header div nav > ul li > div
+    {
+        display: none;
+        padding: 0 20px;
+        z-index: 1;
+        left: 10%;
+        background-color: transparent;
+    }
+
+    header div nav ul li > span.active+div
+    {
+        display: block;
+    }
+
+    header div nav > ul li div img
+    {
+        display: none;
+    }
+
+    header div nav > ul li > div ul
+    {
+        text-align: left;
+    }
+
+    header div nav > ul li > div ul li a
+    {
+        color:var(--gs7);
+        font-size: 14px;
+        font-weight: var(--Medium);
+        line-height: 30px;
+    }
+
+
+    header > div:last-child > div
+    {
+        background-color: var(--gs2);
+        height: 10%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    header > div:last-child > div > ul
+    {
+        text-align: center;
+    }
+
+    header > div:last-child > div > ul li
+    {
+        display: inline-block; 
+        width: 20px;
+        padding: 0 12%;
+    }
+
+    header > div:last-child > div > ul li > button
+    {
+        display: block;
+        background-repeat: no-repeat; 
+        background-size: contain;
+        line-height: 45px;
+        width: 20px;
+        border: none;
+        text-indent: -9999px;
+    }
+
+    header > div:last-child > div ul li a
+    {
+        display: block;
+        text-indent: -9999px; 
+        background-repeat: no-repeat; 
+        background-size: contain;
+        line-height: 45px;
+    }
+
+    header > div:last-child > div ul li:first-child > button
+    {
+        background: url('../images/search.png') center / contain no-repeat;
+    } 
+
+
+    
+    header > div:last-child > div > ul li:first-child > div
+    {
+        position: fixed;
+        bottom: 60px;
+        left: 0;
+        background-color: var(--gs1);
+        line-height: 45px;
+        width: 100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        text-align: left;
+    }
+
+    header > div:last-child > div > ul li:first-child > div *
+    {
+        display: inline-block;
+    }
+
+    header > div:last-child > div > ul li:first-child > div > span:first-of-type
+    {
+        display: none;
+    }
+
+    header > div:last-child > div > ul li:first-child > div input
+    {
+        line-height: 45px;
+        width: 80%;
+        font-size: 12px;
+        font-weight: var(--Medium);
+        color: var(--gs4);
+        border: none;
+    }
+
+    header > div:last-child > div > ul li:first-child button.closeBtn
+    {
+        border: none;
+        background-color: transparent;
+        position: relative;
+    }
+
+    button.closeBtn span
+    {
+        position: absolute;
+        top: -8px;
+        border: 1px solid var(--gs7);
+        border-radius: 2px;
+        line-height: 0;
+        text-indent: -9999px;
+        width: 15px;
+    }
+
+    button.closeBtn span:first-of-type
+    {
+        transform: rotate(45deg);
+    }
+    button.closeBtn span:last-of-type
+    {
+        transform: rotate(-45deg);
+    }
+
+
+    header > div:last-child > div > ul li:nth-child(2) a
+    {
+        background: url('../images/account.png') center / contain no-repeat;
+    } 
+
+    header > div:last-child > div > ul li:nth-child(3) a
+    {
+        background: url('../images/wishlist.png') center / contain no-repeat;
+    } 
+
+
+
+
+    footer
+    {
+        display: block;
+        background-color: var(--gs6);
+        width: 100%;
+    }
+
+    footer div > *
+    {
+        text-align: left;
+    }
+
+
+
+
+    footer div ul:first-child li
+    {
+        display: block;
+    }
+
+
+    footer div ul:first-child li a
+    {
+        color: white;
+        line-height: 50px;
+        font-size: 12px;
+        font-weight: var(--Light);
+    }
+
+
+
+    
+    footer div ul:nth-of-type(2) li
+    {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer div ul:nth-of-type(2) li:not(:last-of-type)
+    {
+        margin-right: 11%;
+    }
+
+    footer div ul:nth-of-type(2) li a
+    {
+        display: inline-block;
+        width: 25px; height: 25px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        
+    }
+
+    footer div ul:nth-of-type(2) li:nth-child(1) a{background-image: url('../images/facebook_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(2) a{background-image: url('../images/instagram_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(3) a{background-image: url('../images/linkedin_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(4) a{background-image: url('../images/twitter_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(5) a{background-image: url('../images/youtube_logo.svg');}
+}
+/* mobile */
+
+
+@media screen and (min-width: 768px) and (max-width:1279px)
+{   
+    .indexContainer > div:first-of-type ul.p1 li h2,
+    .indexContainer > div:first-of-type ul.p1 li a,
+    .indexContainer > div:nth-of-type(2) div.news_content *,
+    .indexContainer > div:nth-of-type(3) *,
+    .indexContainer > div:nth-of-type(4) div *,
+    .indexContainer > div:nth-of-type(5) div *,
+    .indexContainer > div:nth-of-type(6) div *,
+    .indexContainer > div:nth-of-type(7) div *,
+    .view_all_watches,
+    footer > *
+    {
+        max-width: 1000px; margin: 0 auto;
+    }
+
+    header
+    {
+        z-index: 1000;
+        background-color: var(--gs1);
+        position: fixed;
+        width: 100%; 
+        left: 0;
+        top: 0;
+    }
+
+    header > button
+    {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        padding: 2px;
+        height: 16px;
+        border: none;
+        background-color: transparent;
+    }
+
+
+    header > button span
+    {
+        display: block;
+        border: 1px solid var(--gs7);
+        border-radius: 2px;
+        line-height: 0px;
+        text-indent: -9999px;
+        width: 20px;
+        margin-bottom: 5px;
+    }
+
+
+
+    header > div:first-of-type
+    {
+        background-color: var(--gs1);
+        margin-bottom: 19px;
+    }
+
+    header > div:first-of-type h1 a
+    {
+        margin: 0 auto;
+        display: block;
+        width: 225px;
+        height: 95px;
+        text-indent: -9999px;
+        background: url('../images/logo.jpeg') left top / cover no-repeat;
+    }
+
+    header > div:nth-of-type(2)
+    {
+        display: none;
+        position: fixed;
+        background-color: var(--gs2);
+        top: 0;
+        width: 40%;
+        height: 90%;
+        z-index: 1;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
+    }
+
+    header > div:nth-of-type(2)::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    header > div:nth-of-type(2) > button.closeBtn
+    {
+        z-index: 1000;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    header > div:nth-of-type(2) > button.closeBtn span
+    {
+        position: absolute;
+        line-height: 0;
+        border: 2px solid var(--gs7);
+        border-radius: 2px;
+        line-height: 0;
+        width: 20px; 
+        text-indent: -9999px;
+    }
+
+    header > div:nth-of-type(2) > button.closeBtn span:first-of-type
+    {
+        transform: rotate(45deg);
+    }
+    header > div:nth-of-type(2) > button.closeBtn span:last-of-type
+    {
+        transform: rotate(-45deg);
+    }
+
+
+    header > div nav
+    {
+        position: relative;
+    }
+
+    header div nav > ul
+    {
+        padding:5% 7%;
+        text-align: left; 
+    }
+
+
+    header div nav ul li > span
+    {
+        color: var(--gs7);
+        font-weight: var(--Medium);
+        line-height: 45px;
+        font-size: 18px;
+    }
+
+    header div nav > ul li > div
+    {
+        display: none;
+        padding: 0 20px;
+        z-index: 1;
+        left: 10%;
+        background-color: transparent;
+    }
+    header div nav ul li > span.active+div
+    {
+        display: block;
+    }
+
+
+    header div nav > ul li div img
+    {
+        display: none;
+    }
+
+    header div nav > ul li > div div ul
+    {
+        text-align: left;
+    }
+
+    header div nav > ul li > div div ul li a
+    {
+        color:var(--gs7);
+        font-size: 0;
+        line-height: 0;
+        font-size: 14px;
+        font-weight: var(--Medium);
+        line-height: 24px;
+    }
+
+    header > div:last-child > div
+    {
+        background-color: var(--gs2);
+        position: fixed;
+        height: 10%;
+        bottom: 0;
+        width: 40%;
+    }
+
+    header > div:last-child > div > ul
+    {
+        text-align: center;
+    }
+    header > div:last-child > div > ul li
+    {
+        display: inline-block; 
+        width: 20px;
+        padding: 0 12%;
+    }
+
+    header > div:last-child > div > ul li > button
+    {
+        display: block;
+        background-repeat: no-repeat; 
+        background-size: contain;
+        line-height: 45px;
+        width: 20px;
+        border: none;
+        text-indent: -9999px;
+    }
+
+    header > div:last-child > div ul li a
+    {
+        display: block;
+        text-indent: -9999px; 
+        background-repeat: no-repeat; 
+        background-size: contain;
+        line-height: 45px;
+    }
+
+    header > div:last-child > div ul li:first-child > button
+    {
+        background: url('../images/search.png') center / contain no-repeat;
+    } 
+
+
+    
+    header > div:last-child > div > ul li:first-child > div
+    {
+        position: fixed;
+        bottom: 60px;
+        left: 0;
+        background-color: var(--gs1);
+        line-height: 45px;
+        width: 40%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black; 
+    }
+
+    header > div:last-child > div > ul li:first-child > div *
+    {
+        display: inline-block;
+    }
+
+    header > div:last-child > div > ul li:first-child > div > span:first-of-type
+    {
+        display: none;
+    }
+
+    header > div:last-child > div > ul li:first-child > div input
+    {
+        margin:0 5px;
+        line-height: 45px;
+        width: 78%;
+        font-size: 16px;
+        font-weight: var(--Medium);
+        color: var(--gs4);
+        border: none;
+    }
+
+    header > div:last-child > div > ul li:first-child button.closeBtn
+    {
+        margin-right: 15px;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        
+    }
+
+    header > div:last-child > div > ul li:first-child button.closeBtn span
+    {
+        position: absolute;
+        top: -8px;
+        border: 2px solid var(--gs7);
+        border-radius: 2px;
+        line-height: 0;
+        text-indent: -9999px;
+        width: 20px;
+    }
+
+    header > div:last-child > div > ul li:first-child button.closeBtn span:first-of-type
+    {
+        transform: rotate(45deg);
+
+    }
+    header > div:last-child > div > ul li:first-child button.closeBtn span:last-of-type
+    {
+        transform: rotate(-45deg);
+    }
+
+
+    header > div:last-child > div > ul li:nth-child(2) a
+    {
+        background: url('../images/account.png') center / contain no-repeat;
+    } 
+
+    header > div:last-child > div > ul li:nth-child(3) a
+    {
+        background: url('../images/wishlist.png') center / contain no-repeat;
+    } 
+
+
+    footer
+    {
+        background-color: var(--gs6);
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    
+
+    footer div > *
+    {
+        float: left;
+    }
+
+    footer div:after
+    {
+        content: ''; display: block; clear: both;
+    }
+
+    footer div ul
+    {
+        min-width: 20%;
+    }
+    footer div ul:first-child
+    {
+        margin-left: 25px;
+    }
+
+    footer div ul:first-child li
+    {
+        display: inline-block;
+    }
+
+    footer div ul:first-child li:not(:first-child)
+    {
+        margin-left: 20px;
+    }
+
+    footer div ul:first-child li a
+    {
+        color: white;
+        line-height: 50px;
+        font-size: 12px;
+        font-weight: var(--Light);
+    }
+
+    footer div ul:nth-of-type(2)
+    {
+        float: right;
+        min-width: 19%;
+        margin-right: 25px;
+    }
+
+    footer div ul:nth-of-type(2) li
+    {
+        display: inline-block;
+    }
+
+    footer div ul:nth-of-type(2) li a
+    {
+        display: inline-block;
+        width: 25px; height: 25px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    footer div ul:nth-of-type(2) li:nth-child(1) a{background-image: url('../images/facebook_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(2) a{background-image: url('../images/instagram_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(3) a{background-image: url('../images/linkedin_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(4) a{background-image: url('../images/twitter_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(5) a{background-image: url('../images/youtube_logo.svg');}
+}
+/* tablet */
+
+
+
+@media screen and (min-width: 1280px)
+{   
+    header > div:nth-of-type(2),
+    .indexContainer > div:first-of-type ul.p1 li h2,
+    .indexContainer > div:first-of-type ul.p1 li a,
+    .indexContainer > div:nth-of-type(2) div.news_content *,
+    .indexContainer > div:nth-of-type(3) *,
+    .indexContainer > div:nth-of-type(4) div *,
+    .indexContainer > div:nth-of-type(5) div *,
+    .indexContainer > div:nth-of-type(6) div *,
+    .indexContainer > div:nth-of-type(7) div *,
+    .view_all_watches > div,
+    .watch_detail,
+    .account_sign_in *,
+    .account_create *,
+    .account_main,
+    .account_findPw,
+    .collection_history > div,
+    .discover_our_service *,
+    .service_price_calculator,
+    .service_price_calculator_select,
+    .service_price_calculator_receipt,
+    .faq,
+    .services_warranty,
+    .sales_warranty,
+    .extension_warranty,
+    .warranty_guarantee,
+    .warranty_flow,
+    .our_manufacture > div:not(:first-of-type),
+    .watchmaking_history > div:not(:first-of-type),
+    .museum > div:not(:first-of-type),
+    .compilation,
+    .luxury_watches div:not(:first-of-type),
+    .journal_content div:not(:first-of-type),
+    .podcast,
+    .sustainability > div > ul li div:nth-of-type(2),
+    .find_store,
+    .appointment,
+    .subscribe,
+    .subscribe_registered,
+    .screensaver,
+    footer > *
+    {
+        max-width: 1580px; margin: 0 auto;
+    }
+
+    .indexContainer > div:first-of-type,
+    .watch_list,
+    .account_sign_in,
+    .account_create,
+    .account_main,
+    .account_findPw,
+    .introduction_to_our_collection,
+    .collection_history,
+    .discover_our_service,
+    .service_type,
+    .service_price_calculator,
+    .service_price_calculator_select,
+    .service_price_calculator_receipt,
+    .faq,
+    .services_warranty,
+    .sales_warranty,
+    .extension_warranty,
+    .warranty_guarantee,
+    .warranty_flow,
+    .our_manufacture,
+    .watchmaking_history,
+    .innovative_materials,
+    .museum,
+    .compilation,
+    .luxury_watches,
+    .journal_content,
+    .podcast,
+    .sustainability,
+    .find_store,
+    .appointment,
+    .subscribe,
+    .subscribe_registered,
+    .screensaver
+    {
+        margin-top: 159px;
+    }
+
+    header
+    {
+        z-index: 10000;
+        background-color: var(--gs2);
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    header > button,
+    #menuPanel > .closeBtn
+    {
+        display: none;
+    }
+
+    header > div:first-of-type
+    {
+        background-color: var(--gs1);
+        padding-bottom: 19px;
+    }
+
+    header > div:first-of-type h1 a
+    {
+        margin: 0 auto;
+        display: block;
+        width: 225px;
+        height: 95px;
+        text-indent: -9999px;
+        background: url('../images/logo.jpeg') left top / cover no-repeat;
+    }
+
+    header > div:nth-of-type(2)
+    {
+        display: block;
+        position: relative;
+        background-color: var(--gs2);
+    }
+
+    header > div:nth-of-type(2) input
+    {
+        display: none;
+    }
+
+
+
+    header div nav > ul
+    {
+        text-align: center; 
+    }
+
+    header div nav > ul li
+    {
+        display: inline-block;
+    }
+
+    header div nav ul li > span
+    {
+        display: block;
+        color: var(--gs5);
+        margin:0 23px;
+        font-weight: var(--Medium);
+        line-height: 45px;
+        font-size: 16px;
+    }
+
+
+    header div nav > ul li div
+    {
+        height: 450px;
+        display: none;
+    }
+
+    header div nav > ul li:hover
+    {
+        background-color: var(--gs1);
+    }
+
+    header div nav > ul li:hover > span
+    {
+        color: var(--gs7);
+    }
+
+
+
+
+
+
+    header div nav > ul li:hover > div
+    {
+        position: absolute;
+        display: block; 
+        width: 80%;
+        z-index: 1;
+        left: 10%;
+        background-color: var(--gs1);
+        height: 400px;
+    }
+
+    header div nav > ul li:hover > div img
+    {
+        float: left;
+        height: 100%;
+    }
+
+    header div nav > ul li:hover > div div
+    {
+        display: block;
+    }
+
+    header div nav > ul li:hover > div ul
+    {
+        margin-left:20px;
+        width: 28%;
+        float: left;
+        text-align: left;
+        height: 100%;
+    }
+
+    header div nav > ul li:hover > div ul li
+    {
+        display: block;
+        margin: 30px 0;
+        line-height: 1rem;
+
+    }
+
+    header div nav > ul li:hover > div ul li a
+    {
+        color:var(--gs7);
+        font-size: 1rem;
+        font-weight: var(--Medium);
+        transition: 0.3s;
+        position: relative;
+    }
+    header div nav > ul li:hover > div ul li a:before
+    {
+        content: ''; height: 2px; width: 0%;
+        background-color: var(--gs3); display: block;
+        position: absolute; bottom: -5px; left: 0;
+        transition: width 0.35s ease-out;
+    }
+
+    header div nav > ul li:hover > div ul li a:hover:before
+    {
+        width: 100%;
+    }
+
+    header > div:last-child > div
+    {
+        position: absolute;
+        right: 0; top: 0;
+    }
+
+    header > div:last-child > div > ul li
+    {
+        display: inline-block; 
+        width: 20px;
+    }
+
+    header > div:last-child > div > ul li:not(:first-child)
+    {
+        margin-left: 20px;
+    }
+
+    header > div:last-child > div > ul li > button
+    {
+        display: block;
+        background-repeat: no-repeat; 
+        background-size: contain;
+        line-height: 45px;
+        width: 20px;
+        border: none;
+        text-indent: -9999px;
+    }
+
+    header > div:last-child > div ul li a
+    {
+        display: block;
+        text-indent: -9999px; 
+        background-repeat: no-repeat; 
+        background-size: contain;
+        line-height: 45px;
+    }
+
+    header > div:last-child > div ul li:first-child > button
+    {
+        background: url('../images/search.png') center / contain no-repeat;
+    } 
+
+
+    
+    header > div:last-child > div > ul li:first-child > div
+    {
+        position: fixed;
+        top: 114px;
+        left: 0;
+        z-index: 100;
+        background-color: var(--gs1);
+        line-height: 45px;
+        width: 100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    header > div:last-child > div > ul li:first-child > div *
+    {
+        display: inline-block;
+    }
+
+    header > div:last-child > div > ul li:first-child > div > span:first-of-type
+    {
+        font-size: 16px;
+        font-weight: var(--Medium);
+        color: var(--gs3);
+        margin-left: 8%;
+    }
+
+    header > div:last-child > div > ul li:first-child > div input
+    {
+        margin:0 5px;
+        line-height: 45px;
+        width: 78%;
+        font-size: 16px;
+        font-weight: var(--Medium);
+        color: var(--gs4);
+        border: none;
+    }
+
+
+    header > div:last-child > div > ul li:first-child button.closeBtn
+    {
+        border: none;
+        background-color: transparent;
+        position: relative;
+        
+    }
+
+    header > div:last-child > div > ul li:first-child button.closeBtn span
+    {
+        position: absolute;
+        top: -8px;
+        border: 2px solid var(--gs7);
+        border-radius: 2px;
+        line-height: 0;
+        text-indent: -9999px;
+        width: 20px;
+    }
+
+    header > div:last-child > div > ul li:first-child button.closeBtn span:first-of-type
+    {
+        transform: rotate(45deg);
+
+    }
+    header > div:last-child > div > ul li:first-child button.closeBtn span:last-of-type
+    {
+        transform: rotate(-45deg);
+    }
+
+
+    header > div:last-child > div > ul li:nth-child(2) a
+    {
+        background: url('../images/account.png') center / contain no-repeat;
+    } 
+
+    header > div:last-child > div > ul li:nth-child(3) a
+    {
+        background: url('../images/wishlist.png') center / contain no-repeat;
+    } 
+
+
+
+
+    footer
+    {
+        background-color: var(--gs6);
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+
+
+    footer div > *
+    {
+        float: left;
+    }
+
+    footer div:after
+    {
+        content: ''; display: block; clear: both;
+    }
+
+    footer div ul
+    {
+        min-width: 20%;
+    }
+
+    footer div ul:first-child li
+    {
+        display: inline-block;
+    }
+
+
+    footer div ul:first-child li
+    {
+        margin-left: 20px;
+    }
+
+    footer div ul:first-child li a
+    {
+        color: white;
+        line-height: 50px;
+        font-size: 12px;
+        font-weight: var(--Light);
+    }
+
+    footer div ul:nth-of-type(2)
+    {
+        float: right;
+        min-width: 19%;
+    }
+
+    footer div ul:nth-of-type(2) li
+    {
+        display: inline-block;
+    }
+
+    footer div ul:nth-of-type(2) li a
+    {
+        display: inline-block;
+        width: 25px; height: 25px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    footer div ul:nth-of-type(2) li:last-of-type a
+    {
+        margin-right: 20px;
+    }
+
+    footer div ul:nth-of-type(2) li:nth-child(1) a{background-image: url('../images/facebook_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(2) a{background-image: url('../images/instagram_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(3) a{background-image: url('../images/linkedin_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(4) a{background-image: url('../images/twitter_logo.svg');}
+    footer div ul:nth-of-type(2) li:nth-child(5) a{background-image: url('../images/youtube_logo.svg');}
+}
+/* desktop */
+
+
