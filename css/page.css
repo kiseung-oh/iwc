@@ -1405,9 +1405,8 @@
     .collection_history > div:first-of-type > div > ul li
     {
         box-shadow:0px 2px 10px 2px black;
-        margin-left: 20px;
-        margin-top: 20px;
         box-sizing: border-box;
+        margin-bottom: 20px;
     }
 
 
@@ -5160,8 +5159,6 @@
         margin-top: 20px;
         box-sizing: border-box;
     }
-
-
 
     .collection_history > div:first-of-type > div > ul li *
     {
