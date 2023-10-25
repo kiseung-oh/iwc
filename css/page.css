@@ -2609,7 +2609,8 @@
     {
         font-size: 20px;
         font-weight: var(--Bold);
-        line-height: 200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .our_manufacture > div:first-of-type div h2 p
