@@ -1,11 +1,10 @@
 
 $(document).ready(function()
 {
-    podcast_resize();
     $("#headers").empty();
-    $("#headers").load("./headers.html");
+    $("#headers").load("headers.html");
     $("#footers").empty();
-    $("#footers").load("./footers.html");
+    $("#footers").load("footers.html");
     $("#fancybox_options").load("/fancybox_options.html");
     $(".closeBtn").click(header_search_close_event);
     justToggle(".watch_detail > div:first-of-type > div:first-of-type ul li");
@@ -29,6 +28,7 @@ $(document).ready(function()
     password_confirmcheck();
     history_card_list();
     history_scroll_event('.collection_history > div:first-of-type > ul li','.collection_history > div:first-of-type > div > ul li');
+    podcast_matchMedia();
 });
 
 /**
@@ -236,12 +236,10 @@ function xrotate_to_close_search(xrotate_1,xrotate_2)
     line2.css({"animation-duration": "1s","animation-name" :"xrotate2"});
 }
 
-function podcast_resize()
+function podcast_matchMedia()
 {
     var changing_value = $(".podcast div ul li div div a");
 
-    $(window).on('resize', function()
-    {
     if(matchMedia("screen and (min-width: 1279px)").matches) 
     {
         changing_value.css({"opacity": "0"});
@@ -250,5 +248,4 @@ function podcast_resize()
     {
         changing_value.css({"opacity": "1"});
     }
-    });
 }
