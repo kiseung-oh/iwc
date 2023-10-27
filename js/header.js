@@ -1,15 +1,16 @@
 $(document).ready(function(){
-    justToggle("#menuPanel nav ul li span");
-    panelControl(".openBtn");
+    toggle_control("#menuPanel nav ul li span");
+    panel_open_Control(".openBtn");
 });
 
-function justToggle(target)
+function toggle_control(target)
 {
     $(target).click(function(){
         $(this).toggleClass("active");
+        $(target).not($(this)).removeClass("active");  
     });
 }
-function panelControl(openBtn)
+function panel_open_Control(openBtn)
 {
     var currentPanel = null;
     $(openBtn).click(function(){
@@ -17,6 +18,7 @@ function panelControl(openBtn)
         $(currentPanel).addClass("active");
     });
     $(".closeBtn").click(function(){
+        currentPanel = "#" + $(this).attr("data-panel");
         $(currentPanel).removeClass("active");
     });
 }
