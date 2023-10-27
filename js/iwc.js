@@ -197,11 +197,11 @@ function justToggle(target)
 function service_toggle_control(target_from, target_to)
 {
     $(target_from).click(function(){
-        $(this).addClass("active");
+        $(this).toggleClass("active");
         $(target_from).not($(this)).removeClass("active");  
         var count = $(this).index() + 1;
 
-        $(target_to + ':nth-of-type(' + count + ')').addClass('active');
+        $(target_to + ':nth-of-type(' + count + ')').toggleClass('active');
         $(target_to + ':not(:nth-of-type(' + count + '))').removeClass('active');
     });
 } 
@@ -239,10 +239,12 @@ function xrotate_to_close_search(xrotate_1,xrotate_2)
 function podcast_matchMedia()
 {
     var changing_value = $(".podcast div ul li div div a");
+    var changing_value_hover = $(".podcast div ul li div div:hover a");
 
     if(matchMedia("screen and (min-width: 1279px)").matches) 
     {
         changing_value.css({"opacity": "0"});
+        changing_value_hover.css({"opacity": "1"});
     }
     else if(matchMedia("screen and (max-width:1279px)").matches) 
     {
