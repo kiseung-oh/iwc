@@ -239,14 +239,8 @@ function xrotate_to_close_search(xrotate_1,xrotate_2)
 function podcast_matchMedia()
 {
     var changing_value = $(".podcast div ul li div div a");
-    var changing_value_hover = $(".podcast div ul li div div:hover a");
 
-    if(matchMedia("screen and (min-width: 1279px)").matches) 
-    {
-        changing_value.css({"opacity": "0"});
-        changing_value_hover.css({"opacity": "1"});
-    }
-    else if(matchMedia("screen and (max-width:1279px)").matches) 
+    if(matchMedia("screen and (max-width:1279px)").matches) 
     {
         changing_value.css({"opacity": "1"});
     }
