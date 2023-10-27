@@ -1023,7 +1023,7 @@
         margin-bottom: 50px;
     }
 
-    .account_create div form fieldset ul li:last-of-type
+    .account_create div form fieldset ul li:nth-of-type(12)
     {
         display: none;
     }
@@ -1033,8 +1033,7 @@
         margin-bottom: 50px;
     }
 
-    .account_create div form fieldset ul li:nth-of-type(11),
-    .account_create div form fieldset ul li:last-of-type
+    .account_create div form fieldset ul li:nth-of-type(11)
     {
         margin-bottom: 0;
     }
@@ -5156,9 +5155,14 @@
     {
         float: left;
         box-shadow:0px 2px 10px 2px black;
-        margin-left: 20px;
         margin-top: 20px;
         box-sizing: border-box;
+    }
+
+    .collection_history > div:first-of-type > div > ul li:nth-of-type(2),
+    .collection_history > div:first-of-type > div > ul li:nth-of-type(2n+3)
+    {
+        margin-left: 20px;
     }
 
     .collection_history > div:first-of-type > div > ul li *
