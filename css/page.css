@@ -3807,7 +3807,6 @@
         font-size: 12px;
         font-weight: var(--Medium);
         color: var(--gs1);
-        transition: 0.3s;
     }
 
     .btn_w
@@ -3818,9 +3817,16 @@
         font-weight: var(--Medium);
         background-color: var(--gs1);
         color: var(--gs7);
-        transition: 0.3s;
     }
 
+    .index_a_tag_hover li a
+    {
+        border-left: 1px solid var(--gs1);
+        color: var(--gs1);
+        padding: 17px 45px;
+        font-size: 14px;
+        font-weight: var(--Light);    
+    }
 
     .indexContainer > div:first-of-type
     {
@@ -3917,7 +3923,6 @@
         text-align: center;
     }
 
-
     .indexContainer > div:nth-of-type(2) .bx-wrapper .bx-viewport ul li div .news_content > div div:nth-of-type(2)
     {
         float: right;
@@ -3941,12 +3946,6 @@
         margin-top: 30px;
         padding: 10px 20px; 
     }
-
-
-
-
-
-
 
     .indexContainer > div:nth-of-type(3)
     {
@@ -3978,14 +3977,6 @@
     {
         margin-bottom: 15%;
         list-style: none;
-    }
-
-    .indexContainer > div:nth-of-type(3) li a
-    {
-        border-left: 1px solid var(--gs1);
-        color: var(--gs1);
-        font-size: 14px;
-        font-weight: var(--Light);    
     }
 
     .indexContainer > div:nth-of-type(3) div > span
@@ -4277,8 +4268,6 @@
         display: inline-block;
     }
 
-
-
     .watch_list > div:first-of-type
     {
         display: none;
@@ -4355,8 +4344,6 @@
         font-weight: var(--Medium);
         color: var(--gs7);
     }
-
-
 
     .watch_list > div:nth-of-type(2) > div > div.bx-wrapper div.bx-controls
     {
@@ -7727,6 +7714,33 @@
         color: var(--gs1);
     }
 
+    .index_a_tag_hover li a
+    {
+        opacity: 50%;
+        border-left: 1px solid var(--gs1);
+        padding: 17px 15px;
+        color: var(--gs1);
+        font-size: 16px;
+        font-weight: var(--Light);    
+        transition-duration: 0.7s;
+    }
+
+    .index_a_tag_hover li a::before
+    {
+        content: '>';
+        opacity: 0;
+        padding-right: 10px;
+    }
+    
+    .index_a_tag_hover li a:hover
+    {
+        opacity: 1;
+        padding-left: 35px;
+    }
+    .index_a_tag_hover li a:hover::before
+    {
+        opacity: 1;
+    }
 
 
     .indexContainer > div:first-of-type
@@ -7862,13 +7876,6 @@
         margin-top: 53px;
         padding: 17px 45px;
     }
-
-
-
-
-
-
-
     .indexContainer > div:nth-of-type(3)
     {
         background: url('../images/top_gun_big.avif') center / cover no-repeat;
@@ -7901,32 +7908,6 @@
         list-style: none;
     }
 
-    .indexContainer > div:nth-of-type(3) li a
-    {
-        opacity: 50%;
-        border-left: 1px solid var(--gs1);
-        padding: 17px 25px;
-        color: var(--gs1);
-        font-size: 16px;
-        font-weight: var(--Light);    
-        overflow-x: hidden;
-        transition-duration: 1s;
-    }
-
-
-
-    .indexContainer > div:nth-of-type(3) li a:hover::before
-    {
-        margin-right: 20px;
-        content: '>';
-    }
-    
-    .indexContainer > div:nth-of-type(3) li a:hover
-    {
-        opacity: 1;
-    }
-
-
     .indexContainer > div:nth-of-type(3) div > span
     {
         display: block;
@@ -7940,10 +7921,6 @@
     {
         padding:17px 45px;
     }
-
-
-
-
 
     .indexContainer > div:nth-of-type(4)
     {
@@ -7983,28 +7960,6 @@
     {
         margin-bottom: 70px;
         list-style: none;
-    }
-
-    .indexContainer > div:nth-of-type(4) li a
-    {
-        opacity: 50%;
-        border-left: 1px solid var(--gs1);
-        padding: 17px 25px;
-        color: var(--gs1);
-        font-size: 16px;
-        font-weight: var(--Light);    
-    }
-
-    .indexContainer > div:nth-of-type(4) li a:hover
-    {
-        transition: all 0.5s ease-in-out;
-        opacity: 1;
-    }
-
-    .indexContainer > div:nth-of-type(4) li a:hover::before
-    {
-        content: '>';
-        margin-right: 20px;
     }
 
     .indexContainer > div:nth-of-type(4) div div div > div
@@ -8120,34 +8075,10 @@
         list-style: none;
     }
 
-    .indexContainer > div:nth-of-type(6) li a
-    {
-        opacity: 50%;
-        border-left: 1px solid var(--gs1);
-        padding: 17px 25px;
-        color: var(--gs1);
-        font-size: 16px;
-        font-weight: var(--Light);    
-    }
-
-    .indexContainer > div:nth-of-type(6) li a:hover
-    {
-        transition: all 0.5s ease-in-out;
-        opacity: 1;
-    }
-
-    .indexContainer > div:nth-of-type(6) li a:hover::before
-    {
-        content: '>';
-        margin-right: 20px;
-    }
-
-    .indexContainer > div:nth-of-type(6) div > a
+    .indexContainer > div:nth-of-type(6) > div > div > a
     {
         padding:17px 45px;
     }
-
-
 
     .indexContainer > div:nth-of-type(7)
     {
@@ -8184,29 +8115,7 @@
         list-style: none;
     }
 
-    .indexContainer > div:nth-of-type(7) li a
-    {
-        opacity: 50%;
-        border-left: 1px solid var(--gs1);
-        padding: 17px 25px;
-        color: var(--gs1);
-        font-size: 16px;
-        font-weight: var(--Light);    
-    }
-
-    .indexContainer > div:nth-of-type(7) li a:hover
-    {
-        transition: all 0.5s ease-in-out;
-        opacity: 1;
-    }
-
-    .indexContainer > div:nth-of-type(7) li a:hover::before
-    {
-        content: '>';
-        margin-right: 20px;
-    }
-
-    .indexContainer > div:nth-of-type(7) div > a
+    .indexContainer > div:nth-of-type(7) > div > div > a
     {
         padding:17px 45px;
     }
